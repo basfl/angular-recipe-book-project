@@ -15,6 +15,10 @@
 * ng g c shopping-list  --spec false
 * ng g c shopping-list/shopping-edit  --spec false
 
+# generate directives
+
+* ng g d shared/dropdown
+
 # Installed Packages
 
 * npm install --save bootstrap@3

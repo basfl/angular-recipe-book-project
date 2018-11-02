@@ -1,13 +1,26 @@
 import { Recipe } from "./recipe.model";
 import { EventEmitter } from "@angular/core";
+import { Ingredient } from "../shared/ingredient.model";
 
 export class RecipeService {
 
     private recipes: Recipe[] = [
-        new Recipe("A test Recipe", "this is simply a test !!!!", "https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fimg1.southernliving.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2Fimage%2F2017%2F07%2Fmain%2Fshrimp_fried_rice_2525601_onean_0088.jpg%3Fitok%3DZz0mHMdR&w=700&q=85"),
-        new Recipe("Another test Recipe", "this is simply a test !!!!", "https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fimg1.southernliving.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2Fimage%2F2017%2F07%2Fmain%2Fshrimp_fried_rice_2525601_onean_0088.jpg%3Fitok%3DZz0mHMdR&w=700&q=85")
-
-    ];
+        new Recipe(
+          'Tasty Schnitzel',
+          'A super-tasty Schnitzel - just awesome!',
+          'https://upload.wikimedia.org/wikipedia/commons/7/72/Schnitzel.JPG',
+          [
+            new Ingredient('Meat', 1),
+            new Ingredient('French Fries', 20)
+          ]),
+        new Recipe('Big Fat Burger',
+          'What else you need to say?',
+          'https://upload.wikimedia.org/wikipedia/commons/b/be/Burger_King_Angus_Bacon_%26_Cheese_Steak_Burger.jpg',
+          [
+            new Ingredient('Buns', 2),
+            new Ingredient('Meat', 1)
+          ])
+      ];
     recipeSelected=new EventEmitter<Recipe>();
     getRecipe() {
         return this.recipes.slice();

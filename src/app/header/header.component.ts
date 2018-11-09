@@ -6,10 +6,11 @@ import { Component, EventEmitter, Output } from '@angular/core';
     // styleUrls: ['./app.component.css']
 })
 export class HeaderComponent {
-    @Output() featureSelected = new EventEmitter<string>()
-    onSelect(feature: string) {
-        this.featureSelected.emit(feature);
+    // uing routing there is no need for this code 
+    //  @Output() featureSelected = new EventEmitter<string>()
+    // onSelect(feature: string) {
+    //     this.featureSelected.emit(feature);
 
-    }
+    // }
 
 }

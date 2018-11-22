@@ -22,3 +22,8 @@
 # Installed Packages
 
 * npm install --save bootstrap@3
+
+#  Http link
+    *  firebase https://ng-recipe-book-1ef56.firebaseio.com/
+    *  shared folder holds data-storage-service to connect to firebase backend
+

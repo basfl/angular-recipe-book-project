@@ -26,4 +26,11 @@
 #  Http link
     *  firebase https://ng-recipe-book-1ef56.firebaseio.com/
     *  shared folder holds data-storage-service to connect to firebase backend
+    *  note :
+        * here i did not use "rxjs-compat": "^6.1.0" therefore we need to 
+            * import { map } from 'rxjs/operators'; 
+            * and use pip( 
+                map(()=>{})
+                )
+
 

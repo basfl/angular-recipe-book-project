@@ -24,7 +24,7 @@ export class HeaderComponent {
 
     }
     getFetchData(){
-        this.dataStorageService.getRecipe();
+        this.dataStorageService.getRecipes();
     }
 
 }

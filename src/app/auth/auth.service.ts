@@ -2,7 +2,7 @@ import * as firebase from "firebase";
 import { Response } from "@angular/http";
 
 export class AuthService {
-
+  token:string;
   constructor() { }
   signupUser(email: string, password: string) {
     console.log("signup user");
@@ -17,6 +17,11 @@ export class AuthService {
     firebase.auth().signInWithEmailAndPassword(email, password).then
       (
       (response) => {
+        firebase.auth().currentUser.getIdToken().then(
+          (token:string)=>{
+            this.token=token;
+          }
+        )
         console.log("response-> ", response);
       }
       )
@@ -25,5 +30,13 @@ export class AuthService {
           console.log(err);
         }
       )
+  }
+  getToken(){
+     firebase.auth().currentUser.getIdToken().then(
+      (token:string)=>{
+        this.token=token;
+      }
+    )
+    return this.token;
   }
 }

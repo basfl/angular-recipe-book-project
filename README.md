@@ -35,4 +35,8 @@
                 )
 #   Auth
     *  Initialize the firebase sdk in app.component.ts
+# Feature Module
+    *  Note: feature module needs to have CommonModule in import
+    *  you can not declare pip, component , derictive in more than one module
+    * routing module for feature module will use  RouterModule.forChild
 

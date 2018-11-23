@@ -22,6 +22,7 @@
 # Installed Packages
 
 * npm install --save bootstrap@3
+* npm install --save firebase
 
 #  Http link
     *  firebase https://ng-recipe-book-1ef56.firebaseio.com/
@@ -32,5 +33,6 @@
             * and use pip( 
                 map(()=>{})
                 )
-
+#   Auth
+    *  Initialize the firebase sdk in app.component.ts
 

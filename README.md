@@ -25,18 +25,20 @@
 * npm install --save firebase
 
 #  Http link
-    *  firebase https://ng-recipe-book-1ef56.firebaseio.com/
-    *  shared folder holds data-storage-service to connect to firebase backend
-    *  note :
-        * here i did not use "rxjs-compat": "^6.1.0" therefore we need to 
-            * import { map } from 'rxjs/operators'; 
-            * and use pip( 
+ *  firebase https://ng-recipe-book-1ef56.firebaseio.com/
+ *  shared folder holds data-storage-service to connect to firebase backend
+*  note :
+    * here i did not use "rxjs-compat": "^6.1.0" therefore we need to 
+         * import { map } from 'rxjs/operators'; 
+        * and use pip( 
                 map(()=>{})
                 )
 #   Auth
-    *  Initialize the firebase sdk in app.component.ts
+ *  Initialize the firebase sdk in app.component.ts
 # Feature Module
-    *  Note: feature module needs to have CommonModule in import
+ *  Note: feature module needs to have CommonModule in import
     *  you can not declare pip, component , derictive in more than one module
     * routing module for feature module will use  RouterModule.forChild
+# shared Module
+ * note: what we declar needs to be imported as well
 

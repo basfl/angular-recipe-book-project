@@ -41,4 +41,6 @@
     * routing module for feature module will use  RouterModule.forChild
 # shared Module
  * note: what we declar needs to be imported as well
+# Lazy Loading
+ *  { path: 'recipes', loadChildren: './recipes/recipe.module#RecipesModules'
 

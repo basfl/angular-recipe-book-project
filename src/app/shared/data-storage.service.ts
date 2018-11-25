@@ -38,7 +38,10 @@ export class DataStorageService {
     //       this.recipeService.setRecipes(recipes);
     //     }
     //   );
-    this.httpClient.get<Recipe[]>('https://ng-recipe-book-1ef56.firebaseio.com/recipes.json?auth=' + token).pipe(
+    this.httpClient.get<Recipe[]>('https://ng-recipe-book-1ef56.firebaseio.com/recipes.json?auth=' + token, {
+      observe: 'body',
+      responseType: 'json'
+    }).pipe(
       map(
         (recipes) => {
           console.log(recipes);

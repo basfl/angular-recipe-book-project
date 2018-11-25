@@ -33,6 +33,10 @@
         * and use pip( 
                 map(()=>{})
                 )
+#  HttpClient 
+  * import { AppComponent } from './app.component';
+  * note: here get is generic i.e httpClient.get<>(url)
+  
 #   Auth
  *  Initialize the firebase sdk in app.component.ts
 # Feature Module

@@ -43,4 +43,10 @@
  * note: what we declar needs to be imported as well
 # Lazy Loading
  *  { path: 'recipes', loadChildren: './recipes/recipe.module#RecipesModules'
+# preLoading Lazy Loading
+ * in app-routing module add following 
+   *  RouterModule.forRoot(routes,{preloadingStrategy:PreloadAllModules}
+
+# compile ahead of time
+ * ng build --prod --aot
 

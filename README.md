@@ -54,5 +54,19 @@
 # compile ahead of time
  * ng build --prod --aot
 
+# firebase
+* {
+  "rules": {
+    ".read": "auth !=null",
+    ".write": "auth !=null"
+  }
+}
 
-https://ng-recipe-book-1ef56.firebaseapp.com
+
+    {
+      "rules": {
+        ".read": "true",
+        ".write": "true"
+      }
+    }
+* https://ng-recipe-book-1ef56.firebaseapp.com

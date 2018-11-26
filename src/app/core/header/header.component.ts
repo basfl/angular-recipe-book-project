@@ -18,7 +18,7 @@ export class HeaderComponent {
     constructor(private dataStorageService: DataStorageService,private authService:AuthService) { }
     onSaveData() {
         this.dataStorageService.storeRecipe().subscribe(
-            (response: Response) => {
+            (response) => {
                 console.log(response);
             }
         )
